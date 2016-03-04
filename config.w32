@@ -1,0 +1,5 @@
+ARG_WITH("utils", "whether to enable the utils extension", "yes");
+
+if (PHP_THRIFT_PROTOCOL == "yes"){
+  EXTENSION("utils", "utils.cc")
+}
